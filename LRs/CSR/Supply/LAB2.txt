@@ -1,0 +1,45 @@
+Name: Controllability and Observability
+
+a system is said to be controllable if an initial state x-not or x(t-not) can be transferred to a finite state x_y in a finite time interval  (t_f-t_0), t>=0 by some control u
+
+state space eqn
+x_ = Ax + Bu
+y = Cx
+
+x = state
+x_ = derivative of state
+y = output
+A = system matrix
+B = input Matrix (co-efficient)
+u = 
+C = output matrix
+Rank = no. of non-zero rows/columns = linearly independent eqns
+
+
+if each and every state of the system is controlled by input then the system s called completely controllable
+
+How to check controllability?
+a system is completely controllable if and only if the rank of the controllability matrix is equals to system matrix
+
+controllability matrix = ?
+[B AB A^2.B ... A^(n-1).B]
+
+n = state variable`
+
+
+if det(Controllable matrix) = 0 system is uncontrollable
+
+Observable?
+a system is said to be Observable if every state x_not can be exactly determined from the measurement of the output y over a finite time interval 
+0<=t<=t_f
+
+eqns,
+
+
+Observability matrix,
+.
+[C_T : A_T.C_T : (A_T)^2.C_T : (A_T)^(n-1).C_T]
+
+if output y can be achieved by each and every state in the system then the system will be called completely observable
+
+
